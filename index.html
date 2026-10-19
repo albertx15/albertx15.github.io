@@ -919,6 +919,24 @@
       font-size: 0.7rem;
     }
 
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+
+    .project-stack {
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .project-card .stack-chip {
+      background: var(--bg-elevated);
+      padding: 0.35rem 0.7rem;
+      font-size: 0.76rem;
+    }
+
     /* Footer */
     footer {
       padding: 3.5rem 0;
@@ -994,13 +1012,14 @@
         <span class="brand-divider">/</span>
         <span class="brand-project">deportdle</span>
       </a>
-      <nav class="nav-links" aria-label="Secciones del caso de estudio">
+      <nav class="nav-links" aria-label="Secciones del portafolio">
         <a href="#producto">Producto</a>
         <a href="#datos">Datos &amp; ETL</a>
         <a href="#arquitectura">Arquitectura</a>
         <a href="#seo">SEO</a>
         <a href="#calidad">Calidad &amp; Ops</a>
         <a href="#stack">Stack</a>
+        <a href="#proyectos-ia">IA &amp; Analítica</a>
       </nav>
       <a href="https://deportdle.com" target="_blank" rel="noopener noreferrer" class="btn-external">
         <span>deportdle.com</span>
@@ -1502,7 +1521,7 @@
     </section>
 
     <!-- 6. Stack Tecnológico -->
-    <section class="section" id="stack" style="border-bottom: none;">
+    <section class="section" id="stack">
       <div class="container">
         <div class="section-header">
           <span class="section-tag">06 · Stack Tecnológico</span>
@@ -1527,6 +1546,94 @@
           <div class="stack-chip" role="listitem"><span>●</span> systemd</div>
           <div class="stack-chip" role="listitem"><span>●</span> Google Tag Manager</div>
           <div class="stack-chip" role="listitem"><span>●</span> AdSense</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Proyectos de IA y Analítica Predictiva (Albert) -->
+    <section class="section" id="proyectos-ia" style="border-bottom: none;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">07 · Portafolio de Inteligencia Artificial &amp; Automatización</span>
+          <h2 class="section-title">Proyectos de IA y Analítica Predictiva (Albert)</h2>
+          <p class="section-desc">
+            Sistemas especializados en modelado estadístico, procesamiento de lenguaje natural, monitoreo algorítmico en tiempo real y automatización de procesos con visión artificial.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Proyecto 1 -->
+          <article class="card project-card">
+            <div>
+              <div class="card-header">
+                <h3 class="card-title">Sistema de Analítica Predictiva (Apuestas Deportivas)</h3>
+                <span class="card-badge">Human-in-the-loop</span>
+              </div>
+              <p>
+                Arquitectura Human-in-the-loop que integra métricas estadísticas y Procesamiento de Lenguaje Natural (NLP) para auditar reportes médicos en tiempo real y calcular gestión de riesgo.
+              </p>
+            </div>
+            <div class="stack-wrap project-stack" role="list" aria-label="Stack del Sistema de Analítica Predictiva">
+              <div class="stack-chip" role="listitem"><span>●</span> Python</div>
+              <div class="stack-chip" role="listitem"><span>●</span> NLP</div>
+              <div class="stack-chip" role="listitem"><span>●</span> Predictive Modeling</div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="card project-card">
+            <div>
+              <div class="card-header">
+                <h3 class="card-title">Bots de Monitoreo Algorítmico</h3>
+                <span class="card-badge">Tiempo Real</span>
+              </div>
+              <p>
+                Scripts de automatización continua para mercados financieros y deportivos (Binance/Telegram), implementando modelos de clasificación Lorentziana para la detección de patrones.
+              </p>
+            </div>
+            <div class="stack-wrap project-stack" role="list" aria-label="Stack de Bots de Monitoreo Algorítmico">
+              <div class="stack-chip" role="listitem"><span>●</span> Python</div>
+              <div class="stack-chip" role="listitem"><span>●</span> RPA</div>
+              <div class="stack-chip" role="listitem"><span>●</span> Machine Learning</div>
+              <div class="stack-chip" role="listitem"><span>●</span> APIs</div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="card project-card">
+            <div>
+              <div class="card-header">
+                <h3 class="card-title">Agente de IA para Entornos Comerciales</h3>
+                <span class="card-badge">Gem / LLM Custom</span>
+              </div>
+              <p>
+                Desarrollo de un Gem/LLM personalizado mediante System Instructions avanzadas para la atención autónoma de clientes y gestión de reservas, resolviendo cuellos de botella operativos.
+              </p>
+            </div>
+            <div class="stack-wrap project-stack" role="list" aria-label="Stack del Agente de IA para Entornos Comerciales">
+              <div class="stack-chip" role="listitem"><span>●</span> LLMs</div>
+              <div class="stack-chip" role="listitem"><span>●</span> Prompt Engineering</div>
+              <div class="stack-chip" role="listitem"><span>●</span> Generative AI</div>
+            </div>
+          </article>
+
+          <!-- Proyecto 4 -->
+          <article class="card project-card">
+            <div>
+              <div class="card-header">
+                <h3 class="card-title">Arquitectura de Automatización OCR</h3>
+                <span class="card-badge">Visión Artificial</span>
+              </div>
+              <p>
+                Diseño de embudos de conversión que eliminan la entrada manual de datos, utilizando modelos de Visión Artificial para extraer, estructurar y validar información de documentos físicos hacia bases de datos.
+              </p>
+            </div>
+            <div class="stack-wrap project-stack" role="list" aria-label="Stack de Arquitectura de Automatización OCR">
+              <div class="stack-chip" role="listitem"><span>●</span> Python</div>
+              <div class="stack-chip" role="listitem"><span>●</span> OCR</div>
+              <div class="stack-chip" role="listitem"><span>●</span> Computer Vision</div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
